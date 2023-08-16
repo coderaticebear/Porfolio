@@ -6,6 +6,10 @@ ul {
   align-items: center;
   justify-content: space-around;
 }
+ul > li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 nav {
   justify-content: center;
@@ -23,7 +27,7 @@ nav {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid var(--secondary);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0.37);
 
 }
@@ -31,5 +35,23 @@ nav {
   color: var(--secondary);
   font-size: large;
 }
-
+.nav-pills .nav-link:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),  rgba(255, 255, 255, 0));
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0.37);
+  animation: fadeInBlur 3s 0s forwards;
+}
+@keyframes fadeInBlur {
+  from {
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+  }
+  to {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+}
 

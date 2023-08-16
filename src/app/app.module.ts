@@ -14,6 +14,7 @@ import { DownloadsComponent } from './components/downloads/downloads.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MainComponent } from './components/main/main.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -34,7 +35,8 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
