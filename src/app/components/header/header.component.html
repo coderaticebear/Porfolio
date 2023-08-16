@@ -1,0 +1,29 @@
+<div class="main">
+  <nav>
+    <ul ngbNav #nav="ngbNav" class="nav-pills nav-fill">
+      <li ngbNavItem>
+        <button (click)="onHomeClick()" ngbNavLink>Home</button>
+      </li>
+      <li ngbNavItem>
+        <button (click)="onProjectsClick()" ngbNavLink>Projects</button>
+      </li>
+      <li ngbNavItem>
+        <button (click)="onStackClick()" ngbNavLink>Stack</button>
+      </li>
+      <li ngbNavItem>
+        <button (click)="onExperienceClick()" ngbNavLink>Experience</button>
+      </li>
+      <li ngbNavItem>
+        <button  (click)="onEducationClick()"ngbNavLink>Education</button>
+      </li>
+      <li ngbNavItem>
+        <button (click)="onDownloadsClick()" ngbNavLink>Downloads</button>
+      </li>
+      <li ngbNavItem>
+        <button (click)="onContactClick()" ngbNavLink>Contact</button>
+      </li>
+
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
+  </nav>
+</div>

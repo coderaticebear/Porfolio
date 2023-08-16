@@ -1,0 +1,18 @@
+.name {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary);
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+.name >h2:nth-child(1) {
+  font-weight: 100;
+}
+.name >h2:nth-child(3) {
+  font-weight: 100;
+  font-size: 30px;
+}
+.name >h2 {
+  font-size: 72px;
+}
