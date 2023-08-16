@@ -1,6 +1,7 @@
 import { Component, ViewChild, ViewContainerRef, AfterViewInit, Renderer2  } from '@angular/core';
 import { MainComponent } from 'src/app/components/main/main.component';
 import { ProjectsComponent } from 'src/app/components/projects/projects.component';
+import { StackComponent } from 'src/app/components/stack/stack.component';
 
 @Component({
   selector: 'app-home',
@@ -16,17 +17,22 @@ export class HomeComponent {
   }
   createComponent(componentType: string) {
     let mainComponentRef
-    let projectsComponentRef
+    let componentRef
     this.container.clear()
     if(componentType === 'home') {
 
-      mainComponentRef = this.container.createComponent(MainComponent)
-      this.renderer.addClass(mainComponentRef.location.nativeElement, 'fade-in');
+      componentRef = this.container.createComponent(MainComponent)
+      this.renderer.addClass(componentRef.location.nativeElement, 'fade-in');
     }
     if(componentType === 'Projects') {
 
-      projectsComponentRef = this.container.createComponent(ProjectsComponent)
-      this.renderer.addClass(projectsComponentRef.location.nativeElement, 'fade-in');
+      componentRef = this.container.createComponent(ProjectsComponent)
+      this.renderer.addClass(componentRef.location.nativeElement, 'fade-in');
+    }
+    if(componentType === 'Stack') {
+
+      componentRef = this.container.createComponent(StackComponent)
+      this.renderer.addClass(componentRef.location.nativeElement, 'fade-in');
     }
   }
   ngAfterViewInit() {

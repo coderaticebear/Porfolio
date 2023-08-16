@@ -1,4 +1,7 @@
 <div class="main">
-  <app-header (loadHomeComponent)="createComponent('home')" (loadProjectsComponent)="createComponent('Projects')"></app-header>
+  <app-header
+  (loadHomeComponent)="createComponent('home')"
+  (loadProjectsComponent)="createComponent('Projects')"
+  (loadStackComponent)="createComponent('Stack')"></app-header>
   <ng-container #container></ng-container>
 </div>
