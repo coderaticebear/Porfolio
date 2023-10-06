@@ -35,3 +35,46 @@ body {
   animation: fadeIn 2s;
 }
 
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s;
+}
+
+
+.card {
+  width: 40rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1),  rgba(255, 255, 255, 0));
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0.37);
+  color: var(--secondary);
+  transition: transform .3s ease;
+  animation: fadeInBlur 3s 2s forwards;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.01);
+  border: 1px solid var(--secondary);
+}
+@keyframes fadeInBlur {
+  from {
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+  }
+  to {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+}

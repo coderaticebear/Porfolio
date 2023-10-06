@@ -16,6 +16,8 @@ import { MainComponent } from './components/main/main.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StackCardComponent } from './components/stack-card/stack-card.component';
+import { ProjectDescComponent } from './components/project-desc/project-desc.component';
+
 
 
 
@@ -32,7 +34,9 @@ import { StackCardComponent } from './components/stack-card/stack-card.component
     ContactComponent,
     MainComponent,
     ProjectCardComponent,
-    StackCardComponent
+    StackCardComponent,
+    ProjectDescComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -16,7 +16,6 @@ export class HomeComponent {
 
   }
   createComponent(componentType: string) {
-    let mainComponentRef
     let componentRef
     this.container.clear()
     if(componentType === 'home') {
